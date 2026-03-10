@@ -1,3 +1,5 @@
+import { OptionList } from "./OptionList";
+
 export const QuestionItem = () => {
   return (
     <>
@@ -6,7 +8,7 @@ export const QuestionItem = () => {
           <div className="flex-1">
             <p>React là gì?</p>
           </div>
-          <div className="flex flex-col gap-1.5">
+          <div className="flex gap-1.5">
             <button className="py-2.5 px-1 bg-emerald-500 rounded-[5px]">
               Sửa
             </button>
@@ -15,6 +17,7 @@ export const QuestionItem = () => {
             </button>
           </div>
         </div>
+        <OptionList />
       </div>
     </>
   );
