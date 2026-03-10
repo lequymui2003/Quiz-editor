@@ -10,10 +10,10 @@ export const QuestionItem = ({ question }: QuestionItemProps) => {
             <p>{question.name}</p>
           </div>
           <div className="flex gap-1.5">
-            <button className="py-2.5 px-1 bg-emerald-500 rounded-[5px]">
+            <button className="py-2.5 px-1 bg-emerald-500 rounded-[5px] cursor-pointer">
               Sửa
             </button>
-            <button className="py-2.5 px-1 bg-red-400 rounded-[5px]">
+            <button className="py-2.5 px-1 bg-red-400 rounded-[5px] cursor-pointer">
               Xóa
             </button>
           </div>

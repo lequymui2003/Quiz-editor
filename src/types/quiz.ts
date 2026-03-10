@@ -14,6 +14,7 @@ export type Question = {
 
 export type QuestionListProps = {
   questions: Question[];
+  setQuestions: React.Dispatch<React.SetStateAction<Question[]>>;
 };
 
 export type QuestionItemProps = {
@@ -34,4 +35,10 @@ export type Quiz = {
   name: string;
   description: string;
   questions: Question[];
+};
+
+export type AddQuestionModalProps = {
+  setShowPopup: (value: boolean) => void;
+  questions: Question[];
+  setQuestions: (questions: Question[]) => void;
 };
