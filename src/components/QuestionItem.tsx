@@ -16,13 +16,13 @@ export const QuestionItem = ({
           <div className="flex gap-1.5">
             <button
               onClick={onEdit}
-              className="py-2.5 px-1 bg-emerald-500 rounded-[5px] cursor-pointer h-[44px]"
+              className="py-2.5 px-1 bg-emerald-500 rounded-[5px] cursor-pointer h-11"
             >
               Sửa
             </button>
             <button
               onClick={onDelete}
-              className="py-2.5 px-1 bg-red-400 rounded-[5px] cursor-pointer h-[44px]"
+              className="py-2.5 px-1 bg-red-400 rounded-[5px] cursor-pointer h-11"
             >
               Xóa
             </button>
