@@ -19,6 +19,8 @@ export type QuestionListProps = {
 
 export type QuestionItemProps = {
   question: Question;
+  onEdit: () => void;
+  onDelete: () => void;
 };
 
 export type OptionListProps = {
@@ -41,4 +43,5 @@ export type AddQuestionModalProps = {
   setShowPopup: (value: boolean) => void;
   questions: Question[];
   setQuestions: (questions: Question[]) => void;
+  editingQuestion: Question | null;
 };

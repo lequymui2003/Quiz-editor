@@ -1,7 +1,11 @@
 import type { QuestionItemProps } from "../types/quiz";
 import { OptionList } from "./OptionList";
 
-export const QuestionItem = ({ question }: QuestionItemProps) => {
+export const QuestionItem = ({
+  question,
+  onEdit,
+  onDelete,
+}: QuestionItemProps) => {
   return (
     <>
       <div className="rounded-[10px] bg-gray-200 p-5 flex flex-col gap-2.5">
@@ -10,10 +14,16 @@ export const QuestionItem = ({ question }: QuestionItemProps) => {
             <p>{question.name}</p>
           </div>
           <div className="flex gap-1.5">
-            <button className="py-2.5 px-1 bg-emerald-500 rounded-[5px] cursor-pointer">
+            <button
+              onClick={onEdit}
+              className="py-2.5 px-1 bg-emerald-500 rounded-[5px] cursor-pointer h-[44px]"
+            >
               Sửa
             </button>
-            <button className="py-2.5 px-1 bg-red-400 rounded-[5px] cursor-pointer">
+            <button
+              onClick={onDelete}
+              className="py-2.5 px-1 bg-red-400 rounded-[5px] cursor-pointer h-[44px]"
+            >
               Xóa
             </button>
           </div>
